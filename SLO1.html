@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+         <meta charset="utf-8">
+         <!--Allows for mobile viewing of webpages-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Honors Portfolio</title> 
+         <!-- Linking the Bootstrap CSS to our HTML -->
+         <link href="css/bootstrap.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet"> 
+	 <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+	 <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+         <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+      <div class="brand brand-shift">IVC Honors Portfolio</div>
+      
+  
+      <!-- NAVIGATION BAR STUFF IS HERE --> 
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="student_profile.html">IVC HONORS PORTFOLIO</a>
+            </div>
+          
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav next-line">
+                    <li><a href="student_profile.html">Student Profile</a>
+                    </li>
+                    <li class="chosen"><a href="SLO1.html">SLO  #1</a>
+                    </li>
+                    <li><a href="SLO2.html">SLO  #2</a>
+                    </li>
+                    <li><a href="SLO3.html">SLO  #3</a>
+                    </li>
+		    <li><a href="SLO4.html">SLO  #4</a>
+                    </li>
+		    <li><a href="SLO5.html">SLO  #5</a>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+
+    </nav>
+    <!-- NAVIGATION BAR STUFF ENDS HERE -->
+
+    <!-- SEGMENTED BOX STARTS HERE -->
+    <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr class="top-bar">
+                    <h2 class="intro-text text-center">Student Learning Outcome #1
+                    </h2>
+                    <hr class="bot-bar">
+		    <img class="img-responsive img-border img-right slo-img" src="img/honors_medalion.png" alt="">
+		    <h3 class="slo-text text-left first-line">Student should be able to read critically and 
+				analytically a wide range of texts 
+		    </h3>
+
+		    <h3 class="slo-text text-left second-line">and materials.
+		    </h3>
+		
+		    <form>
+			<p class="p-fonts">1. How do you feel that you have met this goal in your Honors Program work?</p>
+			<div class="radio-border">
+			   <input type="radio" name="SLO11" id="SLO11" value="Exceptionally_Well"> Exceptionally well<br>
+			   <input type="radio" name="SLO11" id="SLO11" value="Well"> Well<br>
+			   <input type="radio" name="SLO11" id="SLO11" value="Weakly"> Weakly<br>
+			   <input type="radio" name="SLO11" id="SLO11" value="Not_At_All"> Not at all<br>
+			</div>
+		    </form>
+
+		    <form>
+			<p class="p-fonts">2. Which attached honors-related materials serve as evidence of your having met this goal?</p>
+			<div class="slo-textbox-size">
+			   <textarea class="form-control" rows="6" id="SLO12" placeholder="Enter Your Text Here"></textarea>
+			</div>
+		    </form>
+
+		    <form>
+			<p class="p-fonts">3. How do the honors materials attached show evidence that you have achieved SLO #1?</p>
+			<div class="slo-textbox-size">
+			   <textarea class="form-control" rows="6" id="SLO13" placeholder="Enter Your Text Here"></textarea>
+			</div>
+		    </form>
+
+		    <form>
+		       <div class="form-group">
+    			  <label class="p-fonts">4. Upload File(s)</label>
+    			  <input type="file" class="slo-btn slo-file-upload" id="SLO141">
+    			  <input type="file" class="slo-btn slo-file-upload" id="SLO142">
+    			  <input type="file" class="slo-btn slo-file-upload" id="SLO143">
+  		       </div>
+		    </form>
+
+		    <form>
+			<div class="form-group">
+			   <button type="submit" class="btn btn-default slo-btn">Save</button>
+			</div>
+		    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- SEGMENTED BOX ENDS HERE -->
+
+
+       <script src="js/jquery-1.10.2.js"></script>
+       <script src="js/bootstrap.js"></script>
+    </body>
+</html>
