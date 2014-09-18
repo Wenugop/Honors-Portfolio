@@ -2,6 +2,7 @@
     <html lang="en">
 
     <head>
+	 <script src="js/parse-1.2.19.min.js"></script>
          <meta charset="utf-8">
          <!--Allows for mobile viewing of webpages-->
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,17 @@
          <link href="css/bootstrap.css" rel="stylesheet">
 	 <link href="css/style.css" rel="stylesheet"> 
 	 <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
-         	 <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+         <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
          <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
     </head>
 
-    <body>
-      <div class="brand brand-shift">IVC Honors Portfolio</div>
-      
+    <body onload = "userCheckProfile()">
+      <div class="brand brand-shift">IVC Honors Portfolio 
+          <button type="button" class="btn btn-default logout-btn" 
+		onclick="settingsPage()" id="settings">Settings</button>
+          <button type="button" class="btn btn-default" onclick="logMeOut()" 
+		id="logOut">Log Out</button>
+      </div>
   
       <!-- NAVIGATION BAR STUFF IS HERE --> 
       <nav class="navbar navbar-default" role="navigation">
@@ -75,7 +80,7 @@
                             <div class="form-group">
                                 <label>Student ID Number</label>
 				<div class="textbox-size">
-                                    <input type="text" class="form-control" id="iDNumBox" placeholder="ID">
+                                    <p id="iDNumBox" strong>Error, user not found</p>
 				</div>
                             </div>
                             <div class="form-group">
@@ -98,7 +103,7 @@
 		    </form>
 		    <form class="student-profile-form">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-default">Submit</button>
+                                <button type="button" class="btn btn-default mobile-save" onclick="saveProfile()">Save</button>
                             </div>
                     </form>
 
@@ -109,5 +114,6 @@
 
        <script src="js/jquery-1.10.2.js"></script>
        <script src="js/bootstrap.js"></script>
+       <script src="js/allpagesscript.js"></script>
     </body>
 </html>

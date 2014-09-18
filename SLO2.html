@@ -2,6 +2,7 @@
     <html lang="en">
 
     <head>
+	 <script src="js/parse-1.2.19.min.js"></script>
          <meta charset="utf-8">
          <!--Allows for mobile viewing of webpages-->
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,13 @@
          <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
     </head>
 
-    <body>
-      <div class="brand brand-shift">IVC Honors Portfolio</div>
+    <body onload = "userCheck()">
+      <div class="brand brand-shift">IVC Honors Portfolio
+          <button type="button" class="btn btn-default logout-btn" 
+		onclick="settingsPage()" id="settings">Settings</button>
+          <button type="button" class="btn btn-default" onclick="logMeOut()" 
+		id="logOut">Log Out</button>
+      </div>
       
   
       <!-- NAVIGATION BAR STUFF IS HERE --> 
@@ -103,7 +109,7 @@
 
 		    <form>
 			<div class="form-group">
-			   <button type="submit" class="btn btn-default slo-btn">Save</button>
+			   <button type="button" class="btn btn-default slo-btn mobile-save">Save</button>
 			</div>
 		    </form>
 
@@ -115,5 +121,6 @@
 
        <script src="js/jquery-1.10.2.js"></script>
        <script src="js/bootstrap.js"></script>
+       <script src="js/allpagesscript.js"></script>
     </body>
 </html>
